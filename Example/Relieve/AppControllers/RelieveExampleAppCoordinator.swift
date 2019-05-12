@@ -8,13 +8,17 @@
 
 import Relieve
 
-class RelieveExampleAppCoordinator: AppCoordinator<UINavigationController> {
-    
+class RelieveExampleAppCoordinator: AppCoordinator<UITabBarController> {
     
     override func start() {
         super.start()
         
+        let mainTabBarCoordinator: MainTabBarCoordinator = MainTabBarCoordinator(
+            tabBarController: self.rootViewController
+        )
         
+        mainTabBarCoordinator.start()
+        self.add(childCoordinator: mainTabBarCoordinator)
         
     }
     

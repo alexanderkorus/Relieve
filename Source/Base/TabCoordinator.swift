@@ -24,5 +24,4 @@ public protocol TabCoordinator: Coordinator {
      UITabBarItem for the UIViewController
      */
     var tabBarItem: UITabBarItem { get }
-    
 }

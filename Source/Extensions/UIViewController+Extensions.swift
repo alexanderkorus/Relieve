@@ -62,7 +62,8 @@ public extension UIViewController {
         visibilty: Bool,
         title: String? = nil,
         navigationBarImage: UIImage? = nil,
-        backgroundColor: UIColor? = nil
+        backgroundColor: UIColor? = nil,
+        titleColor: UIColor? = nil
     ) {
         
         if visibilty {
@@ -73,13 +74,17 @@ public extension UIViewController {
                 navigationItem.titleView = imageView
             } else if let title = title {
                 navigationItem.title = title
+                navigationController?.navigationBar.titleTextAttributes = [
+                    .foregroundColor: titleColor ?? .black
+                ]
             }
             
-            self.navigationController?.navigationBar.backgroundColor = backgroundColor
+            self.navigationController?.navigationBar.barTintColor = backgroundColor
+            
             self.navigationController?.navigationBar.isTranslucent = false
         }
         
-        self.navigationController?.setNavigationBarHidden(visibilty, animated: false)
+        self.navigationController?.setNavigationBarHidden(!visibilty, animated: false)
     }
     
     

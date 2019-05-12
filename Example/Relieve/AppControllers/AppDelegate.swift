@@ -16,7 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     lazy var relieveExampleAppCoordinator: AppCoordinator = RelieveExampleAppCoordinator(
         window: self.window!,
-        rootViewController: UINavigationController()
+        rootViewController: UITabBarController()
     )
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {

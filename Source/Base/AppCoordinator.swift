@@ -41,6 +41,8 @@ open class AppCoordinator<RootViewController: UIViewController>: AbstractCoordin
     public init(window: UIWindow, rootViewController: RootViewController) {
         self.window = window
         self.rootViewController = rootViewController
+        self.window.rootViewController = self.rootViewController
+        self.window.makeKeyAndVisible()
         super.init()
     }
     

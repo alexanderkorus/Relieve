@@ -27,6 +27,10 @@ pod 'Relieve'
 - CGFloat Round to(places)
 - Realm?
 - Activity Indicator 
+- Kotlin like let / apply
+- Defaut TabBarCoordinator, TabCoordiantor, ... with configureable TabBar and default implementations
+- Default View Controller Implementations / Protocol 
+- Generate Boilerplate Project & File Templates (seperate project?)
 
 ## Author
 

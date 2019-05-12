@@ -7,9 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4E44D7052288CABA0040052F /* MainTabBarCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E44D7042288CABA0040052F /* MainTabBarCoordinator.swift */; };
+		4E44D7092288CFEB0040052F /* TeamCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E44D7082288CFEB0040052F /* TeamCoordinator.swift */; };
+		4E44D70B2288D15F0040052F /* TeamVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E44D70A2288D15F0040052F /* TeamVC.swift */; };
+		4E44D70D2288D1A60040052F /* TeamView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E44D70C2288D1A60040052F /* TeamView.swift */; };
+		4E44D7102288D21C0040052F /* TeamVCDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E44D70F2288D21C0040052F /* TeamVCDelegate.swift */; };
 		4EE7506522889C320073A363 /* RelieveExampleAppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE7506422889C320073A363 /* RelieveExampleAppCoordinator.swift */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
-		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
@@ -30,13 +34,17 @@
 /* Begin PBXFileReference section */
 		1AC8F2FD5FC49C6161DF6EE1 /* Pods-Relieve_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Relieve_Example.debug.xcconfig"; path = "Target Support Files/Pods-Relieve_Example/Pods-Relieve_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		1B37C1ED617E54C609F09DC1 /* Pods_Relieve_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Relieve_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		23859BBF73BCD0B5387EBCD6 /* Relieve.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Relieve.podspec; path = ../Relieve.podspec; sourceTree = "<group>"; };
+		23859BBF73BCD0B5387EBCD6 /* Relieve.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Relieve.podspec; path = ../Relieve.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		4D085C368035F5DC5CEA559F /* Pods-Relieve_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Relieve_Example.release.xcconfig"; path = "Target Support Files/Pods-Relieve_Example/Pods-Relieve_Example.release.xcconfig"; sourceTree = "<group>"; };
+		4E44D7042288CABA0040052F /* MainTabBarCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarCoordinator.swift; sourceTree = "<group>"; };
+		4E44D7082288CFEB0040052F /* TeamCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamCoordinator.swift; sourceTree = "<group>"; };
+		4E44D70A2288D15F0040052F /* TeamVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamVC.swift; sourceTree = "<group>"; };
+		4E44D70C2288D1A60040052F /* TeamView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamView.swift; sourceTree = "<group>"; };
+		4E44D70F2288D21C0040052F /* TeamVCDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamVCDelegate.swift; sourceTree = "<group>"; };
 		4EE7506422889C320073A363 /* RelieveExampleAppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RelieveExampleAppCoordinator.swift; path = AppControllers/RelieveExampleAppCoordinator.swift; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* Relieve_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Relieve_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = AppControllers/AppDelegate.swift; sourceTree = "<group>"; };
-		607FACD71AFB9204008FA782 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		607FACDC1AFB9204008FA782 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		607FACE51AFB9204008FA782 /* Relieve_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Relieve_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -78,6 +86,65 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		4E44D6FE2288C9860040052F /* Feature */ = {
+			isa = PBXGroup;
+			children = (
+				4E44D6FF2288C9860040052F /* Teams */,
+				4E44D7002288C9860040052F /* Main */,
+				4E44D7012288C9860040052F /* Games */,
+				4E44D7022288C9860040052F /* Player */,
+			);
+			path = Feature;
+			sourceTree = "<group>";
+		};
+		4E44D6FF2288C9860040052F /* Teams */ = {
+			isa = PBXGroup;
+			children = (
+				4E44D70E2288D2010040052F /* Protocols */,
+				4E44D7082288CFEB0040052F /* TeamCoordinator.swift */,
+				4E44D70A2288D15F0040052F /* TeamVC.swift */,
+				4E44D70C2288D1A60040052F /* TeamView.swift */,
+			);
+			path = Teams;
+			sourceTree = "<group>";
+		};
+		4E44D7002288C9860040052F /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				4E44D7042288CABA0040052F /* MainTabBarCoordinator.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		4E44D7012288C9860040052F /* Games */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Games;
+			sourceTree = "<group>";
+		};
+		4E44D7022288C9860040052F /* Player */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Player;
+			sourceTree = "<group>";
+		};
+		4E44D7032288C9920040052F /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		4E44D70E2288D2010040052F /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				4E44D70F2288D21C0040052F /* TeamVCDelegate.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
 		4EE7506622889C3C0073A363 /* AppControllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -111,7 +178,8 @@
 		607FACD21AFB9204008FA782 /* Example for Relieve */ = {
 			isa = PBXGroup;
 			children = (
-				607FACD71AFB9204008FA782 /* ViewController.swift */,
+				4E44D7032288C9920040052F /* Network */,
+				4E44D6FE2288C9860040052F /* Feature */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
@@ -225,17 +293,16 @@
 					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
-						LastSwiftMigration = 0900;
+						LastSwiftMigration = 1020;
 						TestTargetID = 607FACCF1AFB9204008FA782;
 					};
 				};
 			};
 			buildConfigurationList = 607FACCB1AFB9204008FA782 /* Build configuration list for PBXProject "Relieve" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				English,
 				en,
 				Base,
 			);
@@ -345,9 +412,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E44D7052288CABA0040052F /* MainTabBarCoordinator.swift in Sources */,
+				4E44D7102288D21C0040052F /* TeamVCDelegate.swift in Sources */,
 				4EE7506522889C320073A363 /* RelieveExampleAppCoordinator.swift in Sources */,
-				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
+				4E44D7092288CFEB0040052F /* TeamCoordinator.swift in Sources */,
+				4E44D70B2288D15F0040052F /* TeamVC.swift in Sources */,
+				4E44D70D2288D1A60040052F /* TeamView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -530,8 +601,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Relieve_Example.app/Relieve_Example";
 			};
 			name = Debug;
@@ -548,8 +618,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Relieve_Example.app/Relieve_Example";
 			};
 			name = Release;
