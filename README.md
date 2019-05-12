@@ -1,9 +1,12 @@
 # Relieve
 
-[![CI Status](https://img.shields.io/travis/BigAlKo/Relieve.svg?style=flat)](https://travis-ci.org/BigAlKo/Relieve)
+[![CI Status](https://img.shields.io/travis/alexanderkorus/Relieve.svg?style=flat)](https://travis-ci.org/alexanderkorus/Relieve)
 [![Version](https://img.shields.io/cocoapods/v/Relieve.svg?style=flat)](https://cocoapods.org/pods/Relieve)
 [![License](https://img.shields.io/cocoapods/l/Relieve.svg?style=flat)](https://cocoapods.org/pods/Relieve)
 [![Platform](https://img.shields.io/cocoapods/p/Relieve.svg?style=flat)](https://cocoapods.org/pods/Relieve)
+
+Relieve is a personal toolset and for swift development which I integrate into my projects to avoid having to rewrite recurring programming tasks.
+This library contains different classes, helpers and extensions which were developed by me and other different developers. 
 
 ## Example
 
@@ -20,9 +23,14 @@ it, simply add the following line to your Podfile:
 pod 'Relieve'
 ```
 
+## To do
+- CGFloat Round to(places)
+- Realm?
+- Activity Indicator 
+
 ## Author
 
-BigAlKo, alexander.korus@ffuf.de
+Alexander Korus, alexander.korus@ffuf.de
 
 ## License
 

@@ -1,0 +1,23 @@
+PODS:
+  - Relieve (0.1.0):
+    - SnapKit (~> 5.0.0)
+  - SnapKit (5.0.0)
+
+DEPENDENCIES:
+  - Relieve (from `../`)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - SnapKit
+
+EXTERNAL SOURCES:
+  Relieve:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Relieve: b0e4de3db189c22cf160822583e2563797d77a67
+  SnapKit: fd22d10eb9aff484d79a8724eab922c1ddf89bcf
+
+PODFILE CHECKSUM: c2c32d238e7cf22e63de90c0c0858da7f44030ba
+
+COCOAPODS: 1.6.1
