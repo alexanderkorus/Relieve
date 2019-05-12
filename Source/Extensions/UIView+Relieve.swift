@@ -52,7 +52,7 @@ public extension RelieveViewDSL {
 
 public extension UIView {
     /**
-     KioViewDSL instance to access custom methods
+     RelieveViewDSL instance to access custom methods
      */
     var rl: RelieveViewDSL {
         return RelieveViewDSL(view: self)
