@@ -30,7 +30,7 @@ pod 'Relieve'
 
 ## Author
 
-Alexander Korus, alexander.korus@ffuf.de
+Alexander Korus, alexander.korus@svote.io
 
 ## License
 
