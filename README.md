@@ -23,7 +23,7 @@ it, simply add the following line to your Podfile:
 pod 'Relieve'
 ```
 
-## To do
+## To do Relieve Library
 - CGFloat Round to(places)
 - Realm?
 - Activity Indicator 
@@ -34,6 +34,12 @@ pod 'Relieve'
 - Localization
 - Locale (current locale)
 - Add enum with different format strings: https://nsdateformatter.com
+- TableView Empty State 
+
+## To Do Sample App
+- Add realm 
+- Diffing
+- Documentation (RxSwift, Coordinator Pattern)
 
 ## Author
 

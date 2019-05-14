@@ -35,7 +35,7 @@ class MainTabBarCoordinator: TabBarCoordinator {
     func start() {
         
         // Defining the coordinators for the tabbar
-        let teamCoordinator: TeamCoordinator = TeamCoordinator(
+        let teamCoordinator: TeamsCoordinator = TeamsCoordinator(
             navigationController: UINavigationController()
         )
         

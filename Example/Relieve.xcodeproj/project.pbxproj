@@ -8,11 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		4E44D7052288CABA0040052F /* MainTabBarCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E44D7042288CABA0040052F /* MainTabBarCoordinator.swift */; };
-		4E44D7092288CFEB0040052F /* TeamCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E44D7082288CFEB0040052F /* TeamCoordinator.swift */; };
-		4E44D70B2288D15F0040052F /* TeamVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E44D70A2288D15F0040052F /* TeamVC.swift */; };
-		4E44D70D2288D1A60040052F /* TeamView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E44D70C2288D1A60040052F /* TeamView.swift */; };
-		4E44D7102288D21C0040052F /* TeamVCDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E44D70F2288D21C0040052F /* TeamVCDelegate.swift */; };
+		4E44D7092288CFEB0040052F /* TeamsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E44D7082288CFEB0040052F /* TeamsCoordinator.swift */; };
+		4E44D70B2288D15F0040052F /* TeamsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E44D70A2288D15F0040052F /* TeamsVC.swift */; };
+		4E44D70D2288D1A60040052F /* TeamsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E44D70C2288D1A60040052F /* TeamsView.swift */; };
+		4E44D7102288D21C0040052F /* TeamsVCDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E44D70F2288D21C0040052F /* TeamsVCDelegate.swift */; };
 		4E44D715228AC1CB0040052F /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E44D714228AC1CB0040052F /* Team.swift */; };
+		4E44D71A228B1D900040052F /* TeamCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E44D719228B1D900040052F /* TeamCell.swift */; };
+		4E44D723228B26B30040052F /* ConferenceSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E44D722228B26B30040052F /* ConferenceSection.swift */; };
+		4E44D729228B40F60040052F /* BasketballAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E44D728228B40F60040052F /* BasketballAPI.swift */; };
+		4E44D72B228B457F0040052F /* BasketballResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E44D72A228B457F0040052F /* BasketballResponse.swift */; };
+		4E44D72D228B45F90040052F /* BasketballService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E44D72C228B45F90040052F /* BasketballService.swift */; };
 		4EE7506522889C320073A363 /* RelieveExampleAppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE7506422889C320073A363 /* RelieveExampleAppCoordinator.swift */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
@@ -38,11 +43,16 @@
 		23859BBF73BCD0B5387EBCD6 /* Relieve.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Relieve.podspec; path = ../Relieve.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		4D085C368035F5DC5CEA559F /* Pods-Relieve_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Relieve_Example.release.xcconfig"; path = "Target Support Files/Pods-Relieve_Example/Pods-Relieve_Example.release.xcconfig"; sourceTree = "<group>"; };
 		4E44D7042288CABA0040052F /* MainTabBarCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarCoordinator.swift; sourceTree = "<group>"; };
-		4E44D7082288CFEB0040052F /* TeamCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamCoordinator.swift; sourceTree = "<group>"; };
-		4E44D70A2288D15F0040052F /* TeamVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamVC.swift; sourceTree = "<group>"; };
-		4E44D70C2288D1A60040052F /* TeamView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamView.swift; sourceTree = "<group>"; };
-		4E44D70F2288D21C0040052F /* TeamVCDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamVCDelegate.swift; sourceTree = "<group>"; };
+		4E44D7082288CFEB0040052F /* TeamsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamsCoordinator.swift; sourceTree = "<group>"; };
+		4E44D70A2288D15F0040052F /* TeamsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamsVC.swift; sourceTree = "<group>"; };
+		4E44D70C2288D1A60040052F /* TeamsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamsView.swift; sourceTree = "<group>"; };
+		4E44D70F2288D21C0040052F /* TeamsVCDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamsVCDelegate.swift; sourceTree = "<group>"; };
 		4E44D714228AC1CB0040052F /* Team.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
+		4E44D719228B1D900040052F /* TeamCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamCell.swift; sourceTree = "<group>"; };
+		4E44D722228B26B30040052F /* ConferenceSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConferenceSection.swift; sourceTree = "<group>"; };
+		4E44D728228B40F60040052F /* BasketballAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasketballAPI.swift; sourceTree = "<group>"; };
+		4E44D72A228B457F0040052F /* BasketballResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasketballResponse.swift; sourceTree = "<group>"; };
+		4E44D72C228B45F90040052F /* BasketballService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasketballService.swift; sourceTree = "<group>"; };
 		4EE7506422889C320073A363 /* RelieveExampleAppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RelieveExampleAppCoordinator.swift; path = AppControllers/RelieveExampleAppCoordinator.swift; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* Relieve_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Relieve_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -102,10 +112,12 @@
 		4E44D6FF2288C9860040052F /* Teams */ = {
 			isa = PBXGroup;
 			children = (
+				4E44D721228B26410040052F /* Structs */,
+				4E44D718228B1D7D0040052F /* Cells */,
 				4E44D70E2288D2010040052F /* Protocols */,
-				4E44D7082288CFEB0040052F /* TeamCoordinator.swift */,
-				4E44D70A2288D15F0040052F /* TeamVC.swift */,
-				4E44D70C2288D1A60040052F /* TeamView.swift */,
+				4E44D7082288CFEB0040052F /* TeamsCoordinator.swift */,
+				4E44D70A2288D15F0040052F /* TeamsVC.swift */,
+				4E44D70C2288D1A60040052F /* TeamsView.swift */,
 			);
 			path = Teams;
 			sourceTree = "<group>";
@@ -135,6 +147,8 @@
 		4E44D7032288C9920040052F /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				4E44D727228B3CE00040052F /* Services */,
+				4E44D726228B3CD90040052F /* API */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -142,7 +156,7 @@
 		4E44D70E2288D2010040052F /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
-				4E44D70F2288D21C0040052F /* TeamVCDelegate.swift */,
+				4E44D70F2288D21C0040052F /* TeamsVCDelegate.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -151,8 +165,41 @@
 			isa = PBXGroup;
 			children = (
 				4E44D714228AC1CB0040052F /* Team.swift */,
+				4E44D72A228B457F0040052F /* BasketballResponse.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		4E44D718228B1D7D0040052F /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				4E44D719228B1D900040052F /* TeamCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		4E44D721228B26410040052F /* Structs */ = {
+			isa = PBXGroup;
+			children = (
+				4E44D722228B26B30040052F /* ConferenceSection.swift */,
+			);
+			path = Structs;
+			sourceTree = "<group>";
+		};
+		4E44D726228B3CD90040052F /* API */ = {
+			isa = PBXGroup;
+			children = (
+				4E44D728228B40F60040052F /* BasketballAPI.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		4E44D727228B3CE00040052F /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				4E44D72C228B45F90040052F /* BasketballService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 		4EE7506622889C3C0073A363 /* AppControllers */ = {
@@ -401,14 +448,30 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-Relieve_Example/Pods-Relieve_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Differentiator/Differentiator.framework",
+				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
 				"${BUILT_PRODUCTS_DIR}/Relieve/Relieve.framework",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxDataSources/RxDataSources.framework",
+				"${BUILT_PRODUCTS_DIR}/RxRelay/RxRelay.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Differentiator.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Relieve.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxDataSources.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxRelay.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -424,13 +487,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				4E44D7052288CABA0040052F /* MainTabBarCoordinator.swift in Sources */,
-				4E44D7102288D21C0040052F /* TeamVCDelegate.swift in Sources */,
+				4E44D7102288D21C0040052F /* TeamsVCDelegate.swift in Sources */,
 				4EE7506522889C320073A363 /* RelieveExampleAppCoordinator.swift in Sources */,
+				4E44D72B228B457F0040052F /* BasketballResponse.swift in Sources */,
+				4E44D723228B26B30040052F /* ConferenceSection.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 				4E44D715228AC1CB0040052F /* Team.swift in Sources */,
-				4E44D7092288CFEB0040052F /* TeamCoordinator.swift in Sources */,
-				4E44D70B2288D15F0040052F /* TeamVC.swift in Sources */,
-				4E44D70D2288D1A60040052F /* TeamView.swift in Sources */,
+				4E44D7092288CFEB0040052F /* TeamsCoordinator.swift in Sources */,
+				4E44D70B2288D15F0040052F /* TeamsVC.swift in Sources */,
+				4E44D70D2288D1A60040052F /* TeamsView.swift in Sources */,
+				4E44D71A228B1D900040052F /* TeamCell.swift in Sources */,
+				4E44D72D228B45F90040052F /* BasketballService.swift in Sources */,
+				4E44D729228B40F60040052F /* BasketballAPI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

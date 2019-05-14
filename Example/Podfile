@@ -2,6 +2,10 @@ use_frameworks!
 
 target 'Relieve_Example' do
   pod 'Relieve', :path => '../'
+  pod 'Moya', '~> 13.0'
+  pod 'RxSwift'
+  pod 'RxCocoa'
+  pod 'RxDataSources'
 
   target 'Relieve_Tests' do
     inherit! :search_paths

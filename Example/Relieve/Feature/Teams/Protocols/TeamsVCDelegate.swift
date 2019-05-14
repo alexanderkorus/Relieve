@@ -8,6 +8,6 @@
 
 import Foundation
 
-protocol TeamVCDelegate: class {
-    func refresh()
+protocol TeamsVCDelegate: class {
+    func refresh(completion: (([ConferenceSection]?) -> Void)?)
 }

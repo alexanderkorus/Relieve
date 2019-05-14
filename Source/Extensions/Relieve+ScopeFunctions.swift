@@ -1,5 +1,5 @@
 //
-//  ScopeFunc.swift
+//  Relieve+ScopeFunctions.swift
 //  Relieve
 //
 //  Created by Alexander Korus on 14.05.19.
@@ -46,6 +46,6 @@ extension Int32: ScopeFunctions {}
 extension Int64: ScopeFunctions {}
 extension Array: ScopeFunctions {}
 extension URL: ScopeFunctions {}
-
+extension IndexPath: ScopeFunctions {}
 
 
