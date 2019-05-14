@@ -70,4 +70,17 @@ public extension String {
         
         return formattedString
     }
+    
+    /**
+    Converts a String to the given dateFormat
+    */
+    // TODO: Add enum with different format strings: https://nsdateformatter.com
+    func toDate(format: String = "yyyy-MM-dd'T'HH:mm:ss.SSSZ") -> Date? {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = format //Your date format
+        //dateFormatter.timeZone = TimeZone(abbreviation: "GMT+0:00") //Current time zone
+        
+        return dateFormatter.date(from: self)
+    }
+    
 }

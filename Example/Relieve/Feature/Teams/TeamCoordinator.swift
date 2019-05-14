@@ -27,6 +27,11 @@ class TeamCoordinator: AbstractCoordinator, TabCoordinator {
     override func start() {
         super.start()
         
+        
+        
+        
+        
+        
         self.viewController.viewControllers = [
             TeamVC(delegate: self)
         ]

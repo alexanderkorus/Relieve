@@ -12,6 +12,7 @@
 		4E44D70B2288D15F0040052F /* TeamVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E44D70A2288D15F0040052F /* TeamVC.swift */; };
 		4E44D70D2288D1A60040052F /* TeamView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E44D70C2288D1A60040052F /* TeamView.swift */; };
 		4E44D7102288D21C0040052F /* TeamVCDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E44D70F2288D21C0040052F /* TeamVCDelegate.swift */; };
+		4E44D715228AC1CB0040052F /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E44D714228AC1CB0040052F /* Team.swift */; };
 		4EE7506522889C320073A363 /* RelieveExampleAppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE7506422889C320073A363 /* RelieveExampleAppCoordinator.swift */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
@@ -41,6 +42,7 @@
 		4E44D70A2288D15F0040052F /* TeamVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamVC.swift; sourceTree = "<group>"; };
 		4E44D70C2288D1A60040052F /* TeamView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamView.swift; sourceTree = "<group>"; };
 		4E44D70F2288D21C0040052F /* TeamVCDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamVCDelegate.swift; sourceTree = "<group>"; };
+		4E44D714228AC1CB0040052F /* Team.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
 		4EE7506422889C320073A363 /* RelieveExampleAppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RelieveExampleAppCoordinator.swift; path = AppControllers/RelieveExampleAppCoordinator.swift; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* Relieve_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Relieve_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -145,6 +147,14 @@
 			path = Protocols;
 			sourceTree = "<group>";
 		};
+		4E44D713228AC1AA0040052F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4E44D714228AC1CB0040052F /* Team.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		4EE7506622889C3C0073A363 /* AppControllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -178,6 +188,7 @@
 		607FACD21AFB9204008FA782 /* Example for Relieve */ = {
 			isa = PBXGroup;
 			children = (
+				4E44D713228AC1AA0040052F /* Models */,
 				4E44D7032288C9920040052F /* Network */,
 				4E44D6FE2288C9860040052F /* Feature */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
@@ -416,6 +427,7 @@
 				4E44D7102288D21C0040052F /* TeamVCDelegate.swift in Sources */,
 				4EE7506522889C320073A363 /* RelieveExampleAppCoordinator.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
+				4E44D715228AC1CB0040052F /* Team.swift in Sources */,
 				4E44D7092288CFEB0040052F /* TeamCoordinator.swift in Sources */,
 				4E44D70B2288D15F0040052F /* TeamVC.swift in Sources */,
 				4E44D70D2288D1A60040052F /* TeamView.swift in Sources */,

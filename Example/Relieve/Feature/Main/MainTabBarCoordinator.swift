@@ -64,9 +64,4 @@ class MainTabBarCoordinator: TabBarCoordinator {
         self.tabBarController.tabBar.tintColor = .white
         
     }
-    
-    
-    
-    
-    
 }
