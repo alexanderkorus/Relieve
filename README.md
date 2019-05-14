@@ -23,6 +23,18 @@ it, simply add the following line to your Podfile:
 pod 'Relieve'
 ```
 
+## Installing Xcode templates
+
+* Ensure there is a path to ~/Library/Developer/Xcode/Templates/File Templates/, if not execute the following command in the Terminal:
+```
+mkdir ~/Library/Developer/Xcode/Templates ~/Library/Developer/Xcode/Templates/File\ Templates ~/Library/Developer/Xcode/Templates/File\ Templates/Relieve
+```
+
+* Copy the templates to the following directory
+```
+cp -r Templates/* ~/Library/Developer/Xcode/Templates/File\ Templates/Relieve
+```
+
 ## To do Relieve Library
 - CGFloat Round to(places)
 - Realm?

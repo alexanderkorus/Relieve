@@ -35,6 +35,8 @@ public extension TabBarCoordinator {
     }
     
     func degenericize<T: TabCoordinator>(_ coordinators: [T]) -> [AnyTabCoordinator] {
-        return coordinators.map(AnyTabCoordinator.init)
+        return coordinators.map {
+            AnyTabCoordinator($0)
+        }
     }
 }

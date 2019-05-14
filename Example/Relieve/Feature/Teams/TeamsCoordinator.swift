@@ -13,7 +13,7 @@ class TeamsCoordinator: AbstractCoordinator, TabCoordinator {
     
     // MARK: TabCoordinator Properties
     var viewController: UINavigationController
-    var tabBarItem: UITabBarItem = UITabBarItem(title: "Teams", image: nil, selectedImage: nil)
+    let tabBarItem: UITabBarItem = UITabBarItem(title: "Teams", image: nil, selectedImage: nil)
     typealias ViewController = UINavigationController
     
     // MARK: Initializer
