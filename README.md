@@ -5,8 +5,9 @@
 [![License](https://img.shields.io/cocoapods/l/Relieve.svg?style=flat)](https://cocoapods.org/pods/Relieve)
 [![Platform](https://img.shields.io/cocoapods/p/Relieve.svg?style=flat)](https://cocoapods.org/pods/Relieve)
 
-Relieve is a personal toolset and for swift development which I integrate into my projects to avoid having to rewrite recurring programming tasks.
+Relieve is a personal toolset for swift development which I integrate into my projects to avoid having to rewrite recurring programming tasks.
 This library contains different classes, helpers and extensions which were developed by me and other different developers. 
+Also it contains an example app in which I implement in the coordinator pattern, RxSwift and different programming approaches. It serves as reference for my developments and helps to understand this approaches in a simple way.
 
 ## Example
 
