@@ -85,6 +85,12 @@ extension TeamsVC {
         conferenceSections
             .bind(to: tableView.rx.items(dataSource: dataSource))
             .disposed(by: disposeBag)
+        
+        tableView.rx.modelSelected(Team.self)
+            .subscribe(onNext: { team in
+                self.delegate.onTeamClicked(team: team)
+            })
+            .disposed(by: disposeBag)
     }
     
     

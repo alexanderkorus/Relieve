@@ -36,6 +36,17 @@ class TeamsCoordinator: AbstractCoordinator, TabCoordinator {
 
 // MARK: - TeamVC Delegate Methods
 extension TeamsCoordinator: TeamsVCDelegate {
+    
+    func onTeamClicked(team: Team) {
+        
+        let teamDetailCoordinator = TeamDetailCoordinator(
+            team: team,
+            viewController: viewController
+        )
+        
+        teamDetailCoordinator.start()
+        
+    }
 
     func refresh(completion: (([ConferenceSection]?) -> Void)?) {
         

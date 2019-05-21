@@ -10,4 +10,5 @@ import Foundation
 
 protocol TeamsVCDelegate: class {
     func refresh(completion: (([ConferenceSection]?) -> Void)?)
+    func onTeamClicked(team: Team)
 }

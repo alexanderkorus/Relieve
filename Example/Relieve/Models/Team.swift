@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Team: Codable {
+public class Team: Codable {
     
     var id: Int
     var abbreviation: String
