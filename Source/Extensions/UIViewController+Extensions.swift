@@ -74,12 +74,17 @@ public extension UIViewController {
                 navigationItem.titleView = imageView
             } else if let title = title {
                 navigationItem.title = title
-                navigationController?.navigationBar.titleTextAttributes = [
-                    .foregroundColor: titleColor ?? .black
-                ]
+                
+                if let titleColor = titleColor {
+                    navigationController?.navigationBar.titleTextAttributes = [
+                        .foregroundColor: titleColor
+                    ]
+                }
             }
             
-            self.navigationController?.navigationBar.barTintColor = backgroundColor
+            if let backgroundColor = backgroundColor {
+                self.navigationController?.navigationBar.barTintColor = backgroundColor
+            }
             
             self.navigationController?.navigationBar.isTranslucent = false
         }
