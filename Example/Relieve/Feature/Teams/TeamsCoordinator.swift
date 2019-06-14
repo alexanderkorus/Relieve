@@ -8,12 +8,13 @@
 
 import Foundation
 import Relieve
+import UIKit
 
 class TeamsCoordinator: AbstractCoordinator, TabCoordinator {
     
     // MARK: TabCoordinator Properties
     var viewController: UINavigationController
-    let tabBarItem: UITabBarItem = UITabBarItem(title: "Teams", image: nil, selectedImage: nil)
+    let tabBarItem: UITabBarItem = UITabBarItem(title: "Teams", image: UIImage.for(name: "Image"), selectedImage: nil)
     typealias ViewController = UINavigationController
     
     // MARK: Initializer
