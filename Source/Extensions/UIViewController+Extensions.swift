@@ -92,5 +92,30 @@ public extension UIViewController {
         self.navigationController?.setNavigationBarHidden(!visibilty, animated: false)
     }
     
+    func alert(title: String, message: String) {
+        
+        let alertController = UIAlertController(title: title, message:
+            message, preferredStyle: UIAlertController.Style.alert)
+        
+        alertController.addAction(UIAlertAction(title: "OK", style: .default))
+        
+        self.present(alertController, animated: true, completion: nil)
+        
+    }
     
+    
+    func alertWithActions(title: String, message: String, actions: [UIAlertAction]) {
+        
+        let alertController = UIAlertController(title: title, message:
+            message, preferredStyle: UIAlertController.Style.alert)
+        
+        for action in actions {
+            
+            alertController.addAction(action)
+            
+        }
+        
+        self.present(alertController, animated: true, completion: nil)
+        
+    }
 }
