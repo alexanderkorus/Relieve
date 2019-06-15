@@ -41,7 +41,6 @@ open class AppCoordinator<RootViewController: UIViewController>: AbstractCoordin
     public init(window: UIWindow, rootViewController: RootViewController) {
         self.window = window
         self.rootViewController = rootViewController
-        self.window.rootViewController = self.rootViewController
         self.window.makeKeyAndVisible()
         super.init()
     }
@@ -54,5 +53,10 @@ open class AppCoordinator<RootViewController: UIViewController>: AbstractCoordin
     /**
      The UIWindow instance's rootViewController
      */
-    public let rootViewController: RootViewController
+    public var rootViewController: RootViewController {
+        didSet {
+            self.window.rootViewController = self.rootViewController
+            self.window.makeKeyAndVisible()
+        }
+    }
 }
