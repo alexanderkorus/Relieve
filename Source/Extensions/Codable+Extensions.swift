@@ -7,13 +7,13 @@
 
 import Foundation
 
-extension Encodable {
+public extension Encodable {
     
     
     
 }
 
-extension Decodable {
+public extension Decodable {
     
     static func from<T: Decodable>(data: Data, decoder: JSONDecoder = JSONDecoder()) -> T? {
         do {
