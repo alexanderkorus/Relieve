@@ -7,9 +7,9 @@
 
 import Foundation
 
-protocol RelieveDecodable {}
+public protocol RelieveDecodable {}
 
-extension RelieveDecodable where Self: Decodable {
+public extension RelieveDecodable where Self: Decodable {
 
     static func from(data: Data, with decoder: JSONDecoder = JSONDecoder()) -> Self? {
         do {
