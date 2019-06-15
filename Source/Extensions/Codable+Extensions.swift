@@ -15,8 +15,7 @@ extension Encodable {
 
 extension Decodable {
     
-    static func from<T: Decodable>(data: Data) -> T? {
-        let decoder = JSONDecoder()
+    static func from<T: Decodable>(data: Data, decoder: JSONDecoder = JSONDecoder()) -> T? {
         do {
             return try decoder.decode(T.self, from: data)
         } catch let error {
