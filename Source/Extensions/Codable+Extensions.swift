@@ -15,11 +15,11 @@ public extension Encodable {
 
 public extension Decodable {
     
-    static func from<T: Decodable>(data: Data, decoder: JSONDecoder = JSONDecoder()) -> T? {
+    static func from<T: Decodable>(data: Data, ofType type: T.Type, with decoder: JSONDecoder = JSONDecoder()) -> T? {
         do {
-            return try decoder.decode(T.self, from: data)
+            return try decoder.decode(type, from: data)
         } catch let error {
-            print("Parsing Error in: \(T.self) with message: \(error.localizedDescription)")
+            print("Parsing Error in: \(type) with message: \(error.localizedDescription)")
             return nil
         }
     }
