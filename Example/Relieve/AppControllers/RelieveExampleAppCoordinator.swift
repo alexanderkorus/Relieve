@@ -13,6 +13,8 @@ class RelieveExampleAppCoordinator: AppCoordinator<UITabBarController> {
     override func start() {
         super.start()
         
+        self.rootViewController = UITabBarController()
+        
         let mainTabBarCoordinator: MainTabBarCoordinator = MainTabBarCoordinator(
             tabBarController: self.rootViewController
         )

@@ -7,14 +7,14 @@
 
 import Foundation
 
-extension UIColor {
+public extension UIColor {
     
     /**
     Simple extension to UIColor that lets you create colors from hex strings. The method is a failable initializer,
     which means it returns nil if you don't specify a color in the correct format. It should be a # symbol, followed
     by red, green, blue and alpha in hex format, for a total of nine characters.
     */
-    public convenience init?(hex: String) {
+    convenience init?(hex: String) {
         let r, g, b, a: CGFloat
         
         if hex.hasPrefix("#") {
@@ -40,10 +40,10 @@ extension UIColor {
         return nil
     }
     
-    public convenience init?(red: UInt8, green: UInt8, blue: UInt8, alpha: CGFloat = 1.0) {
+    convenience init(red: UInt8, green: UInt8, blue: UInt8, alpha: CGFloat = 1.0) {
         let red: CGFloat = CGFloat(red) / 255.0
         let green: CGFloat = CGFloat(green) / 255.0
         let blue: CGFloat = CGFloat(blue) / 255.0
-       self.init(red: red, green: green, blue: blue, alpha: alpha)
+        self.init(red: red, green: green, blue: blue, alpha: alpha)
     }
 }
