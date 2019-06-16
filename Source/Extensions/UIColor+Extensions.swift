@@ -40,10 +40,10 @@ public extension UIColor {
         return nil
     }
     
-    convenience init(red: UInt8, green: UInt8, blue: UInt8, alpha: CGFloat = 1.0) {
-        let red: CGFloat = CGFloat(red) / 255.0
-        let green: CGFloat = CGFloat(green) / 255.0
-        let blue: CGFloat = CGFloat(blue) / 255.0
-        self.init(red: red, green: green, blue: blue, alpha: alpha)
+    convenience init(r: UInt8, g: UInt8, b: UInt8, a: CGFloat = 1.0) {
+        let red: CGFloat = CGFloat(r) / 255.0
+        let green: CGFloat = CGFloat(g) / 255.0
+        let blue: CGFloat = CGFloat(b) / 255.0
+        self.init(red: red, green: green, blue: blue, alpha: a)
     }
 }

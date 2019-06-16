@@ -45,6 +45,12 @@ open class AppCoordinator<RootViewController: UIViewController>: AbstractCoordin
         super.init()
     }
     
+    open override func start() {
+        self.window.rootViewController = self.rootViewController
+        self.window.makeKeyAndVisible()
+        super.start()
+    }
+    
     /**
      The UIWindow instance the AppCoordinator manages. Typically the AppDelegate's UIWindow instance
      */
