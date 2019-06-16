@@ -83,4 +83,16 @@ public extension String {
         return dateFormatter.date(from: self)
     }
     
+    /**
+    Safe String to URL unwrapping. If resolves to nil, it will return a File URL
+    */
+    var url: URL {
+        get {
+            if let url = URL(string: self) {
+                return url
+            } else {
+                return URL(fileURLWithPath: self)
+            }
+        }
+    }
 }
