@@ -15,7 +15,7 @@ public extension RelieveDecodable where Self: Decodable {
         do {
             return try decoder.decode(Self.self, from: data)
         } catch let error {
-            print("Parsing Error in: \(Self.self) with message: \(error.localizedDescription)")
+            debugPrint("Parsing Error in: \(Self.self) with message: \(error)")
             return nil
         }
     }
@@ -28,7 +28,7 @@ public extension Array where Element: Decodable {
         do {
             return try decoder.decode([Element].self, from: data)
         } catch let error {
-            print("Parsing Error in: \([Element].self) with message: \(error.localizedDescription)")
+            debugPrint("Parsing Error in: \([Element].self) with message: \(error)")
             return nil
         }
     }
@@ -53,4 +53,24 @@ extension String: CodingKey {
         return nil
     }
     
+}
+
+extension Formatter {
+    static let iso8601: DateFormatter = {
+        let formatter = DateFormatter()
+        formatter.calendar = Calendar(identifier: .iso8601)
+        formatter.locale = Locale(identifier: "en_US_POSIX")
+        formatter.timeZone = TimeZone(secondsFromGMT: 0)
+        formatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSXXXXX"
+        return formatter
+    }()
+    
+    static let iso8601noFS: DateFormatter = {
+        let formatter = DateFormatter()
+        formatter.calendar = Calendar(identifier: .iso8601)
+        formatter.locale = Locale(identifier: "en_US_POSIX")
+        formatter.timeZone = TimeZone(secondsFromGMT: 0)
+        formatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ssXXXXX"
+        return formatter
+    }()
 }
