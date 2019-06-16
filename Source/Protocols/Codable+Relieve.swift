@@ -21,3 +21,16 @@ public extension RelieveDecodable where Self: Decodable {
     }
     
 }
+
+public extension Array where Element: Decodable {
+    
+    static func from(data: Data, with decoder: JSONDecoder = JSONDecoder()) -> [Element]? {
+        do {
+            return try decoder.decode([Element].self, from: data)
+        } catch let error {
+            print("Parsing Error in: \([Element].self) with message: \(error.localizedDescription)")
+            return nil
+        }
+    }
+    
+}
