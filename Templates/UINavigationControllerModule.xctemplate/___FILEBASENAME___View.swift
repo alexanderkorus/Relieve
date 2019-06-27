@@ -4,12 +4,12 @@ import UIKit
 import SnapKit
 import Relieve
 
-public final class ___FILEBASENAMEASIDENTIFIER___: UIView {
+final class ___FILEBASENAMEASIDENTIFIER___: UIView {
 
     // MARK: Subviews
 
     // MARK: Initializers
-    public override init(frame: CGRect) {
+    override init(frame: CGRect) {
         super.init(frame: frame)
 
         self.backgroundColor = .white

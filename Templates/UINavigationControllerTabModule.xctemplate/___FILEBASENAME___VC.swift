@@ -5,27 +5,27 @@ import Relieve
 import RxSwift
 import RxCocoa
 
-public final class ___FILEBASENAMEASIDENTIFIER___: UIViewController {
+final class ___FILEBASENAMEASIDENTIFIER___: UIViewController {
 
     // MARK: Delegate Properties
-    private unowned let delegate: ___VARIABLE_productName:identifier___VCDelegate
+    private let delegate: ___VARIABLE_productName:identifier___VCDelegate
 
     // MARK: Initializers
-    public init(delegate: ___VARIABLE_productName:identifier___VCDelegate) {
+    init(delegate: ___VARIABLE_productName:identifier___VCDelegate) {
         self.delegate = delegate
         super.init(nibName: nil, bundle: nil)
     }
 
-    public required init?(coder aDecoder: NSCoder) {
+    required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
 
     // MARK: UIViewController Lifecycle Methods
-    public override func loadView() {
+    override func loadView() {
         self.view = ___VARIABLE_productName:identifier___View()
     }
 
-    public override func viewDidLoad() {
+    override func viewDidLoad() {
         super.viewDidLoad()
 
         self.configureNavigationBar(visibilty: true, title: "", backgroundColor: UIColor.white)

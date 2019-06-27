@@ -4,7 +4,7 @@ import UIKit
 import SnapKit
 import Relieve
 
-public final class ___FILEBASENAMEASIDENTIFIER___: UIView {
+final class ___FILEBASENAMEASIDENTIFIER___: UIView {
 
     // MARK: Subviews
 

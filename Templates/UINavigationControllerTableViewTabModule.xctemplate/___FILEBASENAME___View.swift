@@ -4,7 +4,7 @@ import UIKit
 import SnapKit
 import Relieve
 
-public final class ___FILEBASENAMEASIDENTIFIER___: UIView {
+final class ___FILEBASENAMEASIDENTIFIER___: UIView {
 
     // MARK: Subviews
     let tableView: UITableView = {
@@ -18,7 +18,7 @@ public final class ___FILEBASENAMEASIDENTIFIER___: UIView {
     }()
 
     // MARK: Initializers
-    public override init(frame: CGRect) {
+    override init(frame: CGRect) {
         super.init(frame: frame)
 
         self.backgroundColor = .white
@@ -39,7 +39,7 @@ public final class ___FILEBASENAMEASIDENTIFIER___: UIView {
         }
     }
 
-    public required init?(coder aDecoder: NSCoder) {
+    required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
 }

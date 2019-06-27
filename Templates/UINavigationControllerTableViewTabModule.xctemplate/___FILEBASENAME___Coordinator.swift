@@ -3,7 +3,7 @@
 import UIKit
 import Relieve
 
-public final class ___FILEBASENAMEASIDENTIFIER___: AbstractCoordinator, TabCoordinator {
+final class ___FILEBASENAMEASIDENTIFIER___: AbstractCoordinator, TabCoordinator {
 
     // MARK: - Delegate Properties
     private unowned let delegate: ___VARIABLE_productName:identifier___CoordinatorDelegate
@@ -13,7 +13,7 @@ public final class ___FILEBASENAMEASIDENTIFIER___: AbstractCoordinator, TabCoord
     public typealias ViewController = UINavigationController
 
     // MARK: - Initializer
-    public init(delegate: ___VARIABLE_productName:identifier___CoordinatorDelegate, viewController: UINavigationController) {
+    init(delegate: ___VARIABLE_productName:identifier___CoordinatorDelegate, viewController: UINavigationController) {
         self.delegate = delegate
         self.viewController = viewController
         self.viewController.tabBarItem = self.tabBarItem
@@ -26,7 +26,7 @@ public final class ___FILEBASENAMEASIDENTIFIER___: AbstractCoordinator, TabCoord
     // MARK: - Computed Properties
 
     // MARK: - Instance Methods
-    public override func start() {
+    override func start() {
         super.start()
 
         self.viewController.viewControllers = [

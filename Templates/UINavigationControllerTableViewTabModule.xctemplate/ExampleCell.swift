@@ -3,7 +3,7 @@
 import UIKit
 import Relieve
 
-public final class ExampleCell: UITableViewCell, RelieveTableViewCell {
+final class ExampleCell: UITableViewCell, RelieveTableViewCell {
 
     // MARK: - Subviews
 

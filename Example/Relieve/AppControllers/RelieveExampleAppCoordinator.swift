@@ -7,13 +7,17 @@
 //
 
 import Relieve
+import CoreLocation
 
 class RelieveExampleAppCoordinator: AppCoordinator<UITabBarController> {
+    
+    private let locationManager: CLLocationManager = CLLocationManager()
     
     override func start() {
         super.start()
         
         //self.rootViewController = UITabBarController()
+        locationManager.requestWhenInUseAuthorization()
         
         let mainTabBarCoordinator: MainTabBarCoordinator = MainTabBarCoordinator(
             tabBarController: self.rootViewController

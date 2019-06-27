@@ -3,10 +3,10 @@
 import UIKit
 import Relieve
 
-public final class ___FILEBASENAMEASIDENTIFIER___: TabBarCoordinator {
+final class ___FILEBASENAMEASIDENTIFIER___: TabBarCoordinator {
 
     // MARK: Initializers
-    public init(tabBarController: UITabBarController) {
+    init(tabBarController: UITabBarController) {
         self.tabBarController = tabBarController
     }
 
@@ -42,9 +42,9 @@ public final class ___FILEBASENAMEASIDENTIFIER___: TabBarCoordinator {
         ]
 
         // get unified tab coordinators into array
-        let tabCoordinators: [AnyTabCoordinator] = self.degenericize([
-            /*__Coordinator*/
-        ])
+        let tabCoordinators: [AnyTabCoordinator] = [
+          /*self.degenericize(coordinator)*/
+        ]
 
         // extracts viewcontrollers from tab coordinators
         let vcs: [UIViewController] = tabCoordinators.map { $0.viewController }

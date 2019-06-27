@@ -25,6 +25,11 @@
 		4E44D74C228B7C6B0040052F /* GamesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E44D745228B7C6B0040052F /* GamesView.swift */; };
 		4E44D74D228B7C6B0040052F /* GamesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E44D746228B7C6B0040052F /* GamesVC.swift */; };
 		4E44D74E228B7C6B0040052F /* GamesVCDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E44D747228B7C6B0040052F /* GamesVCDelegate.swift */; };
+		4EA86B0722C4DD7100841C3D /* MapCoordinatorDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA86B0222C4DD7000841C3D /* MapCoordinatorDelegate.swift */; };
+		4EA86B0822C4DD7100841C3D /* MapCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA86B0322C4DD7100841C3D /* MapCoordinator.swift */; };
+		4EA86B0922C4DD7100841C3D /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA86B0422C4DD7100841C3D /* MapView.swift */; };
+		4EA86B0A22C4DD7100841C3D /* MapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA86B0522C4DD7100841C3D /* MapVC.swift */; };
+		4EA86B0B22C4DD7100841C3D /* MapVCDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA86B0622C4DD7100841C3D /* MapVCDelegate.swift */; };
 		4EC638D122945D5F00EE63F4 /* TeamDetailCoordinatorDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC638CC22945D5F00EE63F4 /* TeamDetailCoordinatorDelegate.swift */; };
 		4EC638D222945D5F00EE63F4 /* TeamDetailCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC638CD22945D5F00EE63F4 /* TeamDetailCoordinator.swift */; };
 		4EC638D322945D5F00EE63F4 /* TeamDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC638CE22945D5F00EE63F4 /* TeamDetailView.swift */; };
@@ -72,6 +77,11 @@
 		4E44D745228B7C6B0040052F /* GamesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamesView.swift; sourceTree = "<group>"; };
 		4E44D746228B7C6B0040052F /* GamesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamesVC.swift; sourceTree = "<group>"; };
 		4E44D747228B7C6B0040052F /* GamesVCDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamesVCDelegate.swift; sourceTree = "<group>"; };
+		4EA86B0222C4DD7000841C3D /* MapCoordinatorDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapCoordinatorDelegate.swift; sourceTree = "<group>"; };
+		4EA86B0322C4DD7100841C3D /* MapCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapCoordinator.swift; sourceTree = "<group>"; };
+		4EA86B0422C4DD7100841C3D /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		4EA86B0522C4DD7100841C3D /* MapVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapVC.swift; sourceTree = "<group>"; };
+		4EA86B0622C4DD7100841C3D /* MapVCDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapVCDelegate.swift; sourceTree = "<group>"; };
 		4EC638CC22945D5F00EE63F4 /* TeamDetailCoordinatorDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamDetailCoordinatorDelegate.swift; sourceTree = "<group>"; };
 		4EC638CD22945D5F00EE63F4 /* TeamDetailCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamDetailCoordinator.swift; sourceTree = "<group>"; };
 		4EC638CE22945D5F00EE63F4 /* TeamDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamDetailView.swift; sourceTree = "<group>"; };
@@ -125,6 +135,7 @@
 		4E44D6FE2288C9860040052F /* Feature */ = {
 			isa = PBXGroup;
 			children = (
+				4EA86B0122C4DD5200841C3D /* Map */,
 				4E44D6FF2288C9860040052F /* Teams */,
 				4E44D7002288C9860040052F /* Main */,
 				4E44D7012288C9860040052F /* Games */,
@@ -232,6 +243,18 @@
 				4E44D72C228B45F90040052F /* BasketballService.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		4EA86B0122C4DD5200841C3D /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				4EA86B0222C4DD7000841C3D /* MapCoordinatorDelegate.swift */,
+				4EA86B0322C4DD7100841C3D /* MapCoordinator.swift */,
+				4EA86B0422C4DD7100841C3D /* MapView.swift */,
+				4EA86B0522C4DD7100841C3D /* MapVC.swift */,
+				4EA86B0622C4DD7100841C3D /* MapVCDelegate.swift */,
+			);
+			path = Map;
 			sourceTree = "<group>";
 		};
 		4EC638CB22945D2C00EE63F4 /* TeamDetail */ = {
@@ -530,10 +553,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4EA86B0822C4DD7100841C3D /* MapCoordinator.swift in Sources */,
 				4E44D74C228B7C6B0040052F /* GamesView.swift in Sources */,
 				4EC638D522945D5F00EE63F4 /* TeamDetailVCDelegate.swift in Sources */,
 				4E44D74E228B7C6B0040052F /* GamesVCDelegate.swift in Sources */,
 				4E44D7052288CABA0040052F /* MainTabBarCoordinator.swift in Sources */,
+				4EA86B0A22C4DD7100841C3D /* MapVC.swift in Sources */,
 				4E44D74B228B7C6B0040052F /* ExampleSection.swift in Sources */,
 				4E44D7102288D21C0040052F /* TeamsVCDelegate.swift in Sources */,
 				4EE7506522889C320073A363 /* RelieveExampleAppCoordinator.swift in Sources */,
@@ -550,8 +575,11 @@
 				4EC638D422945D5F00EE63F4 /* TeamDetailVC.swift in Sources */,
 				4E44D70B2288D15F0040052F /* TeamsVC.swift in Sources */,
 				4E44D70D2288D1A60040052F /* TeamsView.swift in Sources */,
+				4EA86B0B22C4DD7100841C3D /* MapVCDelegate.swift in Sources */,
+				4EA86B0922C4DD7100841C3D /* MapView.swift in Sources */,
 				4E44D71A228B1D900040052F /* TeamCell.swift in Sources */,
 				4EC638D322945D5F00EE63F4 /* TeamDetailView.swift in Sources */,
+				4EA86B0722C4DD7100841C3D /* MapCoordinatorDelegate.swift in Sources */,
 				4E44D748228B7C6B0040052F /* GamesCoordinatorDelegate.swift in Sources */,
 				4E44D72D228B45F90040052F /* BasketballService.swift in Sources */,
 				4E44D729228B40F60040052F /* BasketballAPI.swift in Sources */,

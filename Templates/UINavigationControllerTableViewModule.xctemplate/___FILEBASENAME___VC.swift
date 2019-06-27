@@ -6,27 +6,27 @@ import RxSwift
 import RxCocoa
 import RxDataSources
 
-public final class ___FILEBASENAMEASIDENTIFIER___: JAViewController {
+final class ___FILEBASENAMEASIDENTIFIER___: JAViewController {
 
     // MARK: Delegate Properties
-    private unowned let delegate: ___VARIABLE_productName:identifier___VCDelegate
+    private let delegate: ___VARIABLE_productName:identifier___VCDelegate
 
     // MARK: Initializers
-    public init(delegate: ___VARIABLE_productName:identifier___VCDelegate) {
+    init(delegate: ___VARIABLE_productName:identifier___VCDelegate) {
         self.delegate = delegate
         super.init(nibName: nil, bundle: nil)
     }
 
-    public required init?(coder aDecoder: NSCoder) {
+    required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
 
     // MARK: UIViewController Lifecycle Methods
-    public override func loadView() {
+    override func loadView() {
         self.view = ___VARIABLE_productName:identifier___View()
     }
 
-    public override func viewDidLoad() {
+    override func viewDidLoad() {
         super.viewDidLoad()
 
         self.configureNavigationBar(visibilty: true, title: "", backgroundColor: UIColor.white)
@@ -44,7 +44,7 @@ public final class ___FILEBASENAMEASIDENTIFIER___: JAViewController {
     }
 
     // MARK: RxDataSources
-    let dataSource: RxTableViewSectionedReloadDataSource<ExampleSection> = RxTableViewSectionedReloadDataSource<ExampleSection>(
+    lazy var dataSource: RxTableViewSectionedReloadDataSource<ExampleSection> = RxTableViewSectionedReloadDataSource<ExampleSection>(
         configureCell: { (dataSource: TableViewSectionedDataSource<ExampleSection>, tableView: UITableView, indexPath: IndexPath, item: String) -> UITableViewCell in
 
             guard let cell: ExampleCell = tableView.getCell(ExampleCell.self, indexPath: indexPath) else { return UITableViewCell() }

@@ -35,7 +35,7 @@ public final class TeamDetailVC: UIViewController {
     public override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.configureNavigationBar(visibilty: true, title: "", backgroundColor: UIColor(hex: "#7FB1EA"))
+        self.configureNavigationBar(visibilty: true, title: "", backgroundColor: UIColor.rl.color(hexValue: "#7FB1EA"))
 
         self.setUpTapRecognizer(with: [:])
 

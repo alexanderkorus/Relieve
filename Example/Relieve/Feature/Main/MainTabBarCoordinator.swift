@@ -44,16 +44,23 @@ class MainTabBarCoordinator: TabBarCoordinator {
             viewController: UINavigationController()
         )
         
+        let mapCoordinator: MapCoordinator = MapCoordinator(
+            delegate: self,
+            viewController: UINavigationController()
+        )
+        
         // add the coordinators to an array
         let coordinators: [Coordinator] = [
             teamCoordinator,
-            gamesCoordinator
+            gamesCoordinator,
+            mapCoordinator
         ]
         
         // get unified tab coordinators into array
         let tabCoordinators: [AnyTabCoordinator] = [
             self.degenericize(teamCoordinator),
-            self.degenericize(gamesCoordinator)
+            self.degenericize(gamesCoordinator),
+            self.degenericize(mapCoordinator)
         ]
         
         // extracts viewcontrollers from tab coordinators
@@ -74,5 +81,9 @@ class MainTabBarCoordinator: TabBarCoordinator {
 }
 
 extension MainTabBarCoordinator: GamesCoordinatorDelegate {
+    
+}
+
+extension MainTabBarCoordinator: MapCoordinatorDelegate {
     
 }

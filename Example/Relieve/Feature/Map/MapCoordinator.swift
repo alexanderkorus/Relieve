@@ -1,19 +1,25 @@
-//___FILEHEADER___
+//
+//  MapCoordinator.swift
+//  Relieve_Example
+//
+//  Created by Alexander Korus on 27.06.19.
+//  Copyright © 2019 CocoaPods. All rights reserved.
+//
 
 import UIKit
 import Relieve
 
-final class ___FILEBASENAMEASIDENTIFIER___: AbstractCoordinator, TabCoordinator {
+final class MapCoordinator: AbstractCoordinator, TabCoordinator {
 
     // MARK: - Delegate Properties
-    private let delegate: ___VARIABLE_productName:identifier___CoordinatorDelegate
+    private let delegate: MapCoordinatorDelegate
 
     // MARK: - TabCoordinator Properties
-    public let tabBarItem: UITabBarItem = UITabBarItem(title: "", image: nil, selectedImage: nil)
+    public let tabBarItem: UITabBarItem = UITabBarItem(title: "Map", image: nil, selectedImage: nil)
     public typealias ViewController = UINavigationController
 
     // MARK: - Initializer
-    init(delegate: ___VARIABLE_productName:identifier___CoordinatorDelegate, viewController: UINavigationController) {
+    init(delegate: MapCoordinatorDelegate, viewController: UINavigationController) {
         self.delegate = delegate
         self.viewController = viewController
         self.viewController.tabBarItem = self.tabBarItem
@@ -30,12 +36,12 @@ final class ___FILEBASENAMEASIDENTIFIER___: AbstractCoordinator, TabCoordinator 
         super.start()
 
         self.viewController.viewControllers = [
-            ___VARIABLE_productName:identifier___VC(delegate: self)
+            MapVC(delegate: self)
         ]
 
     }
 }
 
-extension ___FILEBASENAMEASIDENTIFIER___: ___VARIABLE_productName:identifier___VCDelegate {
+extension MapCoordinator: MapVCDelegate {
 
 }
