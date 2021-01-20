@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'Relieve'
-  s.version          = '0.1.0'
+  s.version          = '1.0.0'
   s.summary          = 'Personal toolset for Swift development.'
 
 # This description is used to generate tags and improve search results.
@@ -29,6 +29,7 @@ Relieve is a personal toolset for Swift development which I integrate into my pr
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '11.0'
+	s.swift_version = '5.0'
 
   s.source_files = 'Source/**/*'
   

@@ -95,4 +95,37 @@ public extension String {
             }
         }
     }
+
+	/**
+	Returns the localized String for the given key as string
+	*/
+	var localized: String {
+		NSLocalizedString(self, comment: "")
+	}
+
+	/// Replace the passed strings to the placeholder strings in self in format {0} .. {X}
+	/// - Parameter params: One or multiple strings
+	func replaced(with params: String?...) -> String {
+		var copy = self
+		params.enumerated().forEach { idx, param in
+			guard let string = param else { return }
+			copy = copy.replacingOccurrences(of: "{\(idx)}", with: string)
+		}
+		return copy
+	}
+
+	func replaced(string: String, with param: String) -> String {
+		var copy = self
+		copy = copy.replacingOccurrences(of: string, with: string)
+		return copy
+	}
+
+	/**
+	Returns the string trimmed from all whitespaces
+	*/
+	func trim() -> String {
+		var copy = self
+		copy = copy.replacingOccurrences(of: " ", with: "")
+		return copy
+	}
 }

@@ -118,4 +118,28 @@ public extension UIViewController {
         self.present(alertController, animated: true, completion: nil)
         
     }
+
+	/// Sets a logo to the navigation bar
+	/// - Parameters:
+	///   - image: the image which should be set to the navigation bar
+	///   - offsets: the top offset and the bottom offset as tuple (top, bottom), default is (5.0, -5.0)
+	func setNavigationBarLogo(image: UIImage?, offsets: (CGFloat, CGFloat) = (5.0,-5.0)) {
+
+		guard let image = image
+		else { return }
+
+		let imageView = UIImageView(frame: CGRect(x: CGFloat(0), y: CGFloat(0), width: 10, height: 10))
+		imageView.contentMode = .scaleAspectFit
+		imageView.clipsToBounds = true
+		imageView.image = image
+		let contentView = UIView()
+		contentView.addSubview(imageView)
+		imageView.snp.remakeConstraints {
+			$0.top.equalToSuperview().offset(offsets.0)
+			$0.bottom.equalToSuperview().offset(offsets.1)
+			$0.centerX.equalToSuperview()
+			$0.centerY.equalToSuperview()
+		}
+		navigationItem.titleView = contentView
+	}
 }
